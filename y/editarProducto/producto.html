@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./producto.css">
+    <title>Editar Producto</title>
+</head>
+<body>
+    <header>
+        <!-- Logo de la tienda -->
+        <img src="../logo.png" alt="Logo de la tienda" width="300" height="80">
+    </header>
+    <div class="product-edit">
+        <div class="product-image">
+            <!-- Cambiamos el ID a una clase ya que habrá múltiples imágenes -->
+            <div class="image-container" id="imageContainer"></div>
+            <button class="edit-button" id="editImageButton">Cambiar Imágenes del Producto</button>
+        </div>
+        
+        <div class="product-info">
+            <div class="info-row">
+                <div class="info-label">Descripción:</div>
+                <div class="info-value" id="productDescription"></div>
+                <button class="edit-button" id="editDescriptionButton">Editar</button> <!-- Agregado -->
+            </div>
+            <div class="info-row">
+                <div class="info-label">Precio:</div>
+                <div class="info-value" id="productPrice"></div>
+                <button class="edit-button" id="editPriceButton">Editar</button> <!-- Agregado -->
+            </div>
+            <div class="info-row">
+                <button class="edit-button" id="volver">Volver</button>
+            </div>
+                    
+                 <!-- El modal -->
+            <div id="imageModal" class="modal" style="display: none;">
+                <div class="modal-content">
+                    <span class="close" id="closeModal">&times;</span>
+                    <h2>Cambiar Imágenes del Producto</h2>
+                    <!-- Cambia el input para permitir la selección de múltiples archivos -->
+                    <input type="file" id="newImageInput" multiple accept="image/*">
+                    <button id="updateImageButton">Actualizar Imágenes</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="./producto.js"></script>
+    <script src="./subir.js"></script>
+    <footer>
+        <p>Dirección: [Tu dirección]</p>
+        <p>Ubicación: [Tu ubicación]</p>
+        <p>Contacto: [Tus contactos]</p>
+    </footer>
+    
+
+</body>
+</html>

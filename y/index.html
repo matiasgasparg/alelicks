@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Remeras Personalizadas</title>
+    <link rel="stylesheet" href="styles.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+         <!-- Agrega el SDK de Firebase -->
+         <script src="https://www.gstatic.com/firebasejs/9.6.8/firebase-app.js"></script>
+         <script src="https://www.gstatic.com/firebasejs/9.6.8/firebase-analytics.js"></script>
+         <script>
+             // Tu configuración de Firebase
+             const firebaseConfig = {
+              apiKey: "AIzaSyDZj9jZdOI_CFP4MURFXInWFJK-lrTEAUY",
+              authDomain: "alelicks-9019e.firebaseapp.com",
+              projectId: "alelicks-9019e",
+              storageBucket: "alelicks-9019e.appspot.com",
+              messagingSenderId: "288865497993",
+              appId: "1:288865497993:web:0b6a7c16b174649213a758",
+              measurementId: "G-47311N0FCX"
+            };
+             // Inicializa Firebase
+             const app = firebase.initializeApp(firebaseConfig);
+             const analytics = firebase.analytics();
+         </script>
+</head>
+<body>
+    <header>
+        <!-- Logo de la tienda -->
+        <img src="logo.png" alt="Logo de la tienda" width="300" height="80">
+    </header>
+    <nav>
+        <!-- Botones de categorías -->
+        <a href="#Guitarra">Guitarra</a>
+        <a href="#Bajo">Bajo</a>
+        <a href="#Bateria">Bateria</a>
+        <a href="#Microfono">Microfono</a>
+        <div class="auth-buttons">
+            <div class="auth-buttons-container">
+                <a href="../login/login.html" id="loginBtn">Inicio de Sesión</a>
+                <a href="../Crear/crear.html">Registro</a>
+            </div>
+            <a href="../CrearProducto/crearProducto.html" id="adminLink" style="display: none;" >Agregar Producto!</a>
+            <a href="#" id="logoutBtn" style="display: none;" onclick="logout()">Cerrar Sesión</a> <!-- Ocultar el botón de Cerrar Sesión por defecto -->
+        </div>
+    </nav>
+    <div class="container">
+        <!-- Contenido de las categorías -->
+        <section id="Guitarra" class="category">
+            <h2>Guitarras</h2>
+            
+            <div class="products">
+                <!-- Producto 1 -->
+            </div>
+    <div>
+    
+        </section>
+        <!-- Hombre -->
+        <section id="Bajo" class="category">
+            <h2>Bajo</h2>
+            <div class="products">
+            </div>
+        </section>
+        <!-- Mujeres -->
+        <section id="Bateria" class="category">
+            <h2>Bateria</h2>
+            <div class="products">
+                <!-- Imágenes de productos para Mujeres -->
+                <!-- Agrega las imágenes aquí -->
+            </div>
+        </section>
+        <!-- Mochilas -->
+        <section id="Microfono" class="category">
+            <h2>Microfono</h2>
+            <div class="products">
+                <!-- Imágenes de productos para Mochilas -->
+                <!-- Agrega las imágenes aquí -->
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <!-- Información de contacto -->
+        <p>Dirección: [Tu dirección]</p>
+        <p>Ubicación: [Tu ubicación]</p>
+        <p>Contacto: [Tus contactos]</p>
+    </footer>
+    <script src="script.js"></script>
+ 
+    
+</body>
+</html>
